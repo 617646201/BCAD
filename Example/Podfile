@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'BCAD_Example' do
+  pod 'BCAD', :path => '../'
+
+  target 'BCAD_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
