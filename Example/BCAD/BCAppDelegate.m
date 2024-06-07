@@ -7,12 +7,51 @@
 //
 
 #import "BCAppDelegate.h"
+#import "BCViewController.h"
 
 @implementation BCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    BCViewController * vc = [[BCViewController alloc] init];
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
+    
+    // 最低支持14.0
+    
+    // 复制以下代码到info.plist文件
+    
+    /**
+     <key>NSAppTransportSecurity</key>
+     <dict>
+         <key>NSAllowsArbitraryLoads</key>
+         <true/>
+     </dict>
+     */
+    
+    /*广告追踪
+     <key>SKAdNetworkItems</key>
+     <array>
+         <dict>
+             <key>SKAdNetworkIdentifier</key>
+             <string>238da6jt44.skadnetwork</string>
+         </dict>
+         <dict>
+             <key>SKAdNetworkIdentifier</key>
+             <string>x2jnk7ly8j.skadnetwork</string>
+         </dict>
+     </array>
+     */
+    
+    /*idfa
+     <key>NSUserTrackingUsageDescription</key>
+     <string>允许后，可以减少你不感兴趣的推广内容和广告</string>
+     */
+    
+    // 在 Capabilities 打开 iCloud 选项，勾选key-value 和 cloudKit
+    // Containers格式：iCloud.+你的bundleId
+    
     return YES;
 }
 

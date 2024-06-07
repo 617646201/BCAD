@@ -1,13 +1,10 @@
-use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/volcengine/volcengine-specs.git'
 
-platform :ios, '10.0'
+platform :ios, '14.0'
+use_frameworks!
 
 target 'BCAD_Example' do
   pod 'BCAD', :path => '../'
-
-  target 'BCAD_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  
 end
