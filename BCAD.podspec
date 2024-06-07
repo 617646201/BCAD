@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BCAD'
-  s.version          = '2.0'
+  s.version          = '3.0'
   s.summary          = 'A short description of BCAD.'
 
   s.description      = <<-DESC
