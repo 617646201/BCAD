@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BCAD'
-  s.version          = '0.1.0'
+  s.version          = '2.0'
   s.summary          = 'A short description of BCAD.'
 
   s.description      = <<-DESC
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'BCAD/Classes/**/*'
   s.static_framework = true
   
-  s.dependency 'Ads-CN-Beta'
+  s.dependency 'Ads-CN-Beta', '6.2.0.4'
   
   s.dependency 'UMCommon'
   s.dependency 'UMDevice'

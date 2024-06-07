@@ -1,0 +1,6 @@
+framework module BCAD {
+  umbrella header "BCAD-umbrella.h"
+
+  export *
+  module * { export * }
+}

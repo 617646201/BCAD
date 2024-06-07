@@ -1,0 +1,38 @@
+PODS:
+  - Ads-CN-Beta (6.2.0.4):
+    - Ads-CN-Beta/BUAdSDK (= 6.2.0.4)
+  - Ads-CN-Beta/BUAdSDK (6.2.0.4)
+  - BCAD (0.1.0):
+    - Ads-CN-Beta (= 6.2.0.4)
+    - UMAPM
+    - UMCommon
+    - UMDevice
+  - UMAPM (1.9.1)
+  - UMCommon (7.4.7):
+    - UMDevice
+  - UMDevice (3.4.0)
+
+DEPENDENCIES:
+  - BCAD (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Ads-CN-Beta
+    - UMAPM
+    - UMCommon
+    - UMDevice
+
+EXTERNAL SOURCES:
+  BCAD:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Ads-CN-Beta: 86f5a90a8de5dfae5a1d75f5342243fe648e4a35
+  BCAD: be6a707a5db6f26d600d2a22fe33fb27326c90a1
+  UMAPM: dad298c296209d65da542f19ba701dfffc902139
+  UMCommon: 8b4cd0423297c39bca6eea1ec896558b40e5bcf7
+  UMDevice: dcdf7ec167387837559d149fbc7d793d984faf82
+
+PODFILE CHECKSUM: 57234fb1dac9f7836e24105d386a4df94d4b42dc
+
+COCOAPODS: 1.14.3
